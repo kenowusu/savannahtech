@@ -22,10 +22,22 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #eee;
   background-color: #fff;
 }
+@media (min-width: 960px) {
+  .site-header {
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .site-header-inner {
   display: flex;
   align-items: center;
+  max-width: 1200px;
+}
+@media (min-width: 1200px) {
+  .site-header-inner {
+    width: 1200px;
+  }
 }
 
 .site-branding {
@@ -35,6 +47,12 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 51px;
   width: 100%;
   height: 51px;
+}
+@media (min-width: 960px) {
+  .site-branding .custom-logo-link img {
+    height: 61px;
+    max-height: 61px;
+  }
 }
 
 /***********nav-mobile********(hamburger)**/
@@ -48,6 +66,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   cursor: pointer;
   /*********nav-mobile__opened******/
+  /*******reponsive **************/
 }
 .nav-mobile .bar {
   display: inline-block;
@@ -70,6 +89,11 @@ h1, h2, h3, h4, h5, h6 {
   transform: rotate(-45deg);
   position: absolute;
 }
+@media (min-width: 960px) {
+  .nav-mobile {
+    display: none;
+  }
+}
 
 /******site navigation ***********************************/
 .main-navigation {
@@ -81,10 +105,10 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   height: 100%;
   overflow-y: scroll;
-  overflow-x: auto;
   z-index: 1;
   transition: transform 0.3s ease-in-out;
   transform: translateX(-260px);
+  /******reponsive *******************/
   /********* nav-logo-mobile*****/
 }
 .main-navigation.main-navigation__opened {
@@ -102,18 +126,42 @@ h1, h2, h3, h4, h5, h6 {
   background: #eee;
   height: 40px;
 }
+@media (min-width: 960px) {
+  .main-navigation {
+    transform: translateX(0) !important;
+    position: static;
+    flex-direction: row;
+    width: auto;
+    overflow-y: hidden;
+    display: flex;
+  }
+}
 .main-navigation ul#primary-menu {
   margin: 0;
   padding: 0;
+}
+@media (min-width: 960px) {
+  .main-navigation ul#primary-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 650px;
+  }
 }
 .main-navigation .nav-logo-mobile {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
+  margin-right: auto;
 }
 .main-navigation .nav-logo-mobile .custom-logo-link img {
   max-height: 51px;
   width: 100%;
+}
+@media (min-width: 960px) {
+  .main-navigation .nav-logo-mobile {
+    display: none;
+  }
 }
 
 /*********#primary menu ***********/
@@ -121,6 +169,12 @@ ul#primary-menu li.menu-item {
   list-style-type: none;
   border-bottom: 1px solid #ebebeb;
   width: 211px;
+}
+@media (min-width: 720px) {
+  ul#primary-menu li.menu-item {
+    width: auto;
+    border-bottom: 0;
+  }
 }
 ul#primary-menu a {
   color: #007bff;
@@ -136,4 +190,11 @@ ul#primary-menu a {
 }
 ul#primary-menu a:hover {
   color: #282828;
+}
+@media (min-width: 960px) {
+  ul#primary-menu a {
+    padding: 0;
+    color: #000;
+    font-size: 1.1em;
+  }
 }
