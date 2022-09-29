@@ -37,7 +37,7 @@
 
 
 
-			<nav id="site-navigation" class="main-navigation site-sidebar">
+			<nav id="site-navigation" class="main-navigation site-sidebar js-primary-navigation">
 			
 			
 			<div class="nav-logo-mobile">
@@ -57,7 +57,7 @@
 			
 			</nav><!-- #site-navigation -->
 
-			<div class="nav-mobile">
+			<div class="nav-mobile js-nav-mobile">
 					<span class="bar one"></span>
 					<span class="bar two"></span>
 					<span class="bar three"></span>

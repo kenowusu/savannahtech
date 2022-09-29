@@ -39,12 +39,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /***********nav-mobile********(hamburger)**/
 .nav-mobile {
+  width: 45px;
+  height: 40px;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 30px;
   cursor: pointer;
+  /*********nav-mobile__opened******/
 }
 .nav-mobile .bar {
   display: inline-block;
@@ -52,6 +55,20 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   background-color: #1f2233;
   margin-bottom: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+.nav-mobile .bar.two {
+  transition: display 0.3s ease-in-out;
+}
+.nav-mobile.nav-mobile__opened .bar.one {
+  transform: rotate(45deg);
+}
+.nav-mobile.nav-mobile__opened .bar.two {
+  display: none;
+}
+.nav-mobile.nav-mobile__opened .bar.three {
+  transform: rotate(-45deg);
+  position: absolute;
 }
 
 /******site navigation ***********************************/
@@ -66,8 +83,12 @@ h1, h2, h3, h4, h5, h6 {
   overflow-y: scroll;
   overflow-x: auto;
   z-index: 1;
-  display: none;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-260px);
   /********* nav-logo-mobile*****/
+}
+.main-navigation.main-navigation__opened {
+  transform: translateX(0);
 }
 .main-navigation::-webkit-scrollbar {
   width: 5px;
