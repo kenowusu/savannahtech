@@ -26,32 +26,41 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'savannatech' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<a href="">
-				<?php the_custom_logo();?>
-			</a>
-		</div><!-- .site-branding -->
+		<div class="site-header-inner">
+			<div class="site-branding">
+				<a href="">
+					<?php the_custom_logo();?>
+				</a>
+			</div><!-- .site-branding -->
 
 
 
 
 
-		<nav id="site-navigation" class="main-navigation site-sidebar">
-          
-		  
-		  <div class="nav-logo-mobile">
-		  	<?php the_custom_logo();?>
-		  </div> <!-- mobile logo -->
-
-		   <!-- display primary navigation -->
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
+			<nav id="site-navigation" class="main-navigation site-sidebar">
 			
-		</nav><!-- #site-navigation -->
+			
+			<div class="nav-logo-mobile">
+				<?php the_custom_logo();?>
+			</div> <!-- mobile logo -->
+
+			<!-- display primary navigation -->
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					)
+				);
+				?>
+
+			
+			</nav><!-- #site-navigation -->
+
+			<div class="nav-mobile">
+					<span class="bar one"></span>
+					<span class="bar two"></span>
+					<span class="bar three"></span>
+			</div>
+		</div>	
 	</header><!-- #masthead -->

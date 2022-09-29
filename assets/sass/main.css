@@ -17,7 +17,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /******site header*****/
-/******site navigation *************/
+.site-header {
+  padding: 8px 15px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+
+.site-header-inner {
+  display: flex;
+  align-items: center;
+}
+
+.site-branding {
+  margin-right: auto;
+}
+.site-branding .custom-logo-link img {
+  max-height: 51px;
+  width: 100%;
+  height: 51px;
+}
+
+/***********nav-mobile********(hamburger)**/
+.nav-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30px;
+  cursor: pointer;
+}
+.nav-mobile .bar {
+  display: inline-block;
+  width: 26px;
+  height: 2px;
+  background-color: #1f2233;
+  margin-bottom: 5px;
+}
+
+/******site navigation ***********************************/
 .main-navigation {
   width: 260px;
   padding: 30px 26px 30px 16px;
@@ -29,6 +66,8 @@ h1, h2, h3, h4, h5, h6 {
   overflow-y: scroll;
   overflow-x: auto;
   z-index: 1;
+  display: none;
+  /********* nav-logo-mobile*****/
 }
 .main-navigation::-webkit-scrollbar {
   width: 5px;
