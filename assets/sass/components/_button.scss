@@ -1,0 +1,15 @@
+.btn{
+    background-color: transparent;
+    cursor: pointer;
+    text-transform:uppercase;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius:0;
+
+
+    &.btn-primary{
+        background-color:#266dbf;
+        color:#fff;
+        border:0;
+    }
+}

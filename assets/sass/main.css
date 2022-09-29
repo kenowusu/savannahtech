@@ -145,7 +145,9 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 650px;
+  }
+  .main-navigation ul#primary-menu li {
+    margin-left: 30px;
   }
 }
 .main-navigation .nav-logo-mobile {
@@ -195,6 +197,34 @@ ul#primary-menu a:hover {
   ul#primary-menu a {
     padding: 0;
     color: #000;
-    font-size: 1.1em;
+    font-size: 1em;
   }
+  ul#primary-menu a:hover {
+    color: #266dbf;
+  }
+}
+
+/***** nav submit cv*********/
+.nav-submit-cv {
+  display: none;
+  margin-left: auto;
+}
+@media (min-width: 960px) {
+  .nav-submit-cv {
+    display: flex;
+  }
+}
+
+.btn {
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 0;
+}
+.btn.btn-primary {
+  background-color: #266dbf;
+  color: #fff;
+  border: 0;
 }

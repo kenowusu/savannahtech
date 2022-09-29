@@ -152,7 +152,12 @@
           display: flex; 
           justify-content: space-between;
           align-items: center; 
-          min-width:650px;
+
+
+          li{
+            margin-left:30px;
+          }
+          
 
         
         }
@@ -177,8 +182,6 @@
             display: none;
         }
     }
-
-
 
 }
 
@@ -215,10 +218,23 @@ ul#primary-menu{
         }
         
         @include lg{
+
+            &:hover{
+                color:#266dbf;
+            }
             padding:0;
             color:#000;
-            font-size:1.1em;
+            font-size:1em;
         }
     }
 }
 
+
+/***** nav submit cv*********/ 
+.nav-submit-cv{
+    display: none;
+    margin-left:auto;
+    @include lg{
+        display:flex;
+    }
+}

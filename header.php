@@ -57,6 +57,11 @@
 			
 			</nav><!-- #site-navigation -->
 
+			<!-- site submit cv button -->
+			<div class="nav-submit-cv">
+				<button class="btn btn-primary">Submit Your CV</button>
+			</div>
+
 			<div class="nav-mobile js-nav-mobile">
 					<span class="bar one"></span>
 					<span class="bar two"></span>
