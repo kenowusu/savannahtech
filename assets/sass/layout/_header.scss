@@ -1,0 +1,98 @@
+
+/******site header*****/
+.site-header{
+
+    
+}
+
+.site-branding{
+
+}
+
+/******site navigation *************/ 
+.main-navigation{
+    width:260px;
+    padding:30px 26px 30px 16px;
+    background-color:#fff;
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    overflow-y:scroll;
+    overflow-x:auto;
+    z-index:1;
+
+
+    &::-webkit-scrollbar {
+        width: 5px;
+        max-height: 20%;
+        height: 20%;
+    }
+    // &::-webkit-scrollbar-track {
+    //     margin-top: 10px;
+    //     margin-bottom: 10px;
+ 
+    // }
+    &::-webkit-scrollbar-button {
+        background: #ccc
+    }
+    &::-webkit-scrollbar-track-piece {
+        background: #eee;
+        height:40px;
+ 
+    }
+    // &::-webkit-scrollbar-thumb {
+    //     background: #eee
+    // }​
+
+
+    ul#primary-menu{
+        margin:0;
+        padding:0;
+
+    }
+
+    
+    .nav-logo-mobile{
+        margin-bottom:30px;
+        display: flex;
+        justify-content: center;
+        .custom-logo-link{
+            img{
+                max-height: 51px;
+                width:100%;
+            }
+        }
+    }
+    
+}
+
+
+/*********#primary menu ***********/
+ul#primary-menu{
+
+
+    li.menu-item{
+        list-style-type: none; 
+        border-bottom:1px solid #ebebeb;
+        width:211px;
+
+    }
+    
+    a{
+        color:#007bff;
+        text-decoration:none;
+        height:100%;
+        width:100%;
+        display: inline-block;
+        padding:12px 0;
+        font-family: $font-title;
+        font-weight:600;
+        font-size:15px;
+        transition: color .3s ease-out;
+        &:hover{
+            color: #282828;
+        }
+      
+    }
+}

@@ -27,26 +27,23 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$savannatech_description = get_bloginfo( 'description', 'display' );
-			if ( $savannatech_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $savannatech_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
+			<a href="">
+				<?php the_custom_logo();?>
+			</a>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'savannatech' ); ?></button>
+
+
+
+
+		<nav id="site-navigation" class="main-navigation site-sidebar">
+          
+		  
+		  <div class="nav-logo-mobile">
+		  	<?php the_custom_logo();?>
+		  </div> <!-- mobile logo -->
+
+		   <!-- display primary navigation -->
 			<?php
 			wp_nav_menu(
 				array(
@@ -55,5 +52,6 @@
 				)
 			);
 			?>
+			
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

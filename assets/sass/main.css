@@ -1,4 +1,79 @@
 /*!****************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/sass/main.scss ***!
   \****************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap);
+/*!********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/sass/main.scss (1) ***!
+  \********************************************************************************************************************/
 /*****************colors********************************/
+/********font-family***********/
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+/******site header*****/
+/******site navigation *************/
+.main-navigation {
+  width: 260px;
+  padding: 30px 26px 30px 16px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: auto;
+  z-index: 1;
+}
+.main-navigation::-webkit-scrollbar {
+  width: 5px;
+  max-height: 20%;
+  height: 20%;
+}
+.main-navigation::-webkit-scrollbar-button {
+  background: #ccc;
+}
+.main-navigation::-webkit-scrollbar-track-piece {
+  background: #eee;
+  height: 40px;
+}
+.main-navigation ul#primary-menu {
+  margin: 0;
+  padding: 0;
+}
+.main-navigation .nav-logo-mobile {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.main-navigation .nav-logo-mobile .custom-logo-link img {
+  max-height: 51px;
+  width: 100%;
+}
+
+/*********#primary menu ***********/
+ul#primary-menu li.menu-item {
+  list-style-type: none;
+  border-bottom: 1px solid #ebebeb;
+  width: 211px;
+}
+ul#primary-menu a {
+  color: #007bff;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  padding: 12px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  transition: color 0.3s ease-out;
+}
+ul#primary-menu a:hover {
+  color: #282828;
+}
