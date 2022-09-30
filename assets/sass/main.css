@@ -1,7 +1,7 @@
 /*!****************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/sass/main.scss ***!
   \****************************************************************************************************************/
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Rubik&display=swap);
 /*!********************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./assets/sass/main.scss (1) ***!
   \********************************************************************************************************************/
@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   height: 100%;
   overflow-y: scroll;
-  z-index: 1;
+  z-index: 99;
   transition: transform 0.3s ease-in-out;
   transform: translateX(-260px);
   /******reponsive *******************/
@@ -227,4 +227,58 @@ ul#primary-menu a:hover {
   background-color: #266dbf;
   color: #fff;
   border: 0;
+}
+
+.entry-header {
+  display: none;
+}
+
+.site-main {
+  margin: -24px;
+}
+
+.intro-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro-cover > .wp-block-cover__inner-container {
+  max-width: 1200px;
+  padding: 20px;
+}
+@media (min-width: 720px) {
+  .intro-cover {
+    padding-top: 125px;
+    padding-bottom: 125px;
+  }
+}
+@media (min-width: 960px) {
+  .intro-cover {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
+
+@media (min-width: 720px) {
+  .intro-cover-title {
+    font-size: 4em;
+    margin: 0;
+  }
+}
+@media (min-width: 960px) {
+  .intro-cover-title {
+    font-size: 4.5em;
+  }
+}
+
+@media (min-width: 720px) {
+  .intro-cover-text {
+    max-width: 700px;
+    font-size: 1.2em;
+  }
+}
+
+.intro-cover-btns a {
+  border-radius: 0;
+  padding: 3px 28px;
 }

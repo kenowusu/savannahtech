@@ -1,0 +1,56 @@
+.intro-cover{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+
+
+   &>.wp-block-cover__inner-container{
+    max-width: 1200px;
+    // background-color: blue;
+    padding:20px;
+   }
+
+   @include md{
+     padding-top:125px;
+     padding-bottom:125px;
+   }
+
+   @include lg{
+    padding-top:150px;
+    padding-bottom:150px;
+   }
+}
+
+.intro-cover-container{
+ 
+}
+.intro-cover-title{
+    @include md{
+        // color:green !important;
+        font-size:4em;
+        margin:0;
+       }
+
+     @include lg{
+        // color: aqua !important;
+        font-size:4.5em;
+        
+     }  
+}
+
+.intro-cover-text{
+  @include md{
+    max-width:700px;
+    font-size:1.2em;
+  }
+}
+
+
+.intro-cover-btns{
+  
+    a{
+        border-radius:0;
+        padding: 3px 28px;
+    }
+}

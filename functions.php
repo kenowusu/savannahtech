@@ -160,6 +160,13 @@ function savannatech_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'savannatech_scripts' );
 
+
+/************
+ * Include block editor patterns 
+ */
+require get_template_directory() . '/patterns/intro-cover-pattern.php';
+
+require get_template_directory() . '/patterns/pattern_categories.php';
 /**
  * Implement the Custom Header feature.
  */
